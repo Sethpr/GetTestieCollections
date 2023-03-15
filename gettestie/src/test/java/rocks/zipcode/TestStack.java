@@ -24,5 +24,18 @@ public class TestStack {
         assertEquals(false, stack.isEmpty()); // false
     }
 
+    @Test
+    void testStack2() {
+        Stack<String> stack = new Stack<>();
+        String expected = "Hello world";
+        stack.push(expected);
+
+
+        stack.push("Goodbye");
+        stack.pop();
+
+        assertEquals(expected, stack.peek());
+    }
+
     // Make a bigger test exercising more Stack methods.....
 }
